@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body{
+            background-color: rgb(150, 209, 13);
+
+        }
+        table,th,td{
+         border: 1px solid black;
+         
+         font-size: 25px;
+         align-items: center;
+
+        }
+        #p{
+            align-items: center;
+            color:rgb(7, 64, 7);
+            margin: 10px;
+            padding: 100px;
+            background-color:rgb(184, 225, 205);
+            
+        }
+        th{
+            color: black;
+            text-align: center;
+        }
+        td{
+            color: rgb(203, 10, 71);
+            text-align: center;
+        }
+        
+    h1{
+        background-color: rgb(12, 225, 16);
+    }
+
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/college.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='js/main.js') }}">
+
+</head>
+
+<body>
+    <header>
+        <img src="{{ user_image }} " height="100px" width="100%">
+          <h1 class="top-head">Information Technology</h1>
+        </header>
+        <nav>
+        <div class="topnav" id="myTopnav">
+          <a href="{{url_for('index')}}" class="active">Home</a>
+          <a href="{{url_for('student')}}" >STUDENT LOGIN </a>
+          <a href="{{url_for('student')}}" > REGISTER</a>
+          
+          <a href="{{url_for('course')}}" >COURSE</a>
+          <a href="#news" >SYLLABUS </a>
+         
+        
+          <a href="{{url_for('Photo')}}" >PHOTO AND GALLARY </a>
+          <a href="{{url_for('contact')}}">CONTACT AND HELP? </a>
+        </div>
+        </nav> 
+        <section>
+    <h1 align="center" style="color:rgb(3, 41, 230)">COURSE INFORMATION</h1><hr>
+    <table id="p" >
+        <tr>
+            <th>COURSE</th>
+            <th>COURSE NAME</th>
+            <th>LIMIT OF STUDENT</th>
+            <th>COURSE DURATION </th>
+            <th>PATTERN OF EXAMINATION</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Information Technology</td>
+            <td>25</td>
+            <td>3 year </td>
+            <td>Semester System</td>
+            
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Civil Engineering</td>
+            <td>45</td>
+            <td>3 year</td>
+            <td>Semester System</td>
+            
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Electronic Engineering</td>
+            <td>30</td>
+            <td>3 year</td>
+            <td>Semester System</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Pharmacy</td>
+            <td>30</td>
+            <td>2 year</td>
+            <td>year System</td>
+        </tr>
+    </table>
+    <footer>
+        <div class="footer-content">
+            <img src="logo.png" class="logo" alt="" >
+            </div>
+        </div>
+      </footer>
+      <footer>
+      <p class="info">support emails - gplohaght@gmail.com, lohaghat@gmail.com</p>
+        <p class="info">telephone - 180 00 00 001, 180 00 00 002</p>
+        <div class="footer-social-container">
+            <div>
+                <a href="#" class="social-link">terms & services</a>
+                <a href="#" class="social-link">privacy page</a>
+            </div>
+            <div> 
+                <a href="#" class="social-link">facebook</a>
+            </div>
+        </div>
+        <p class="footer-credit">Government Polytechnic Lohaghat, Uttarakhand-262524. All rights are reserved © 2022-23</p>
+      </footer>
+      <script src="collage.js"></script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body{
+        background-color: turquoise;
+    }
+    h1{
+        color: rgb(220, 7, 7);
+    }
+    small{
+        color: blue;
+    }
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/college.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='js/main.js') }}">
+
+</head>
+<body>
+  <header>
+    <img src="{{ user_image }} " height="100px" width="100%">
+      <h1 class="top-head">Information Technology</h1>
+    </header>
+    <nav>
+    <div class="topnav" id="myTopnav">
+      <a href="{{url_for('index')}}" class="active">Home</a>
+      <a href="{{url_for('student')}}" >STUDENT LOGIN </a>
+      <a href="{{url_for('student')}}" > REGISTER</a>
+      
+      <a href="{{url_for('course')}}" >COURSE</a>
+      <a href="#news" >SYLLABUS </a>
+     
+    
+      <a href="{{url_for('Photo')}}" >PHOTO AND GALLARY </a>
+      <a href="{{url_for('contact')}}">CONTACT AND HELP? </a>
+    </div>
+    </nav> 
+    <h1 align="center">GOVERNMENT LOHAGHAT POLYTECHNIC LOHAGHAT</h1><hr>
+    <h2>Address: <small >GOVERNMENT LOHAGHAT POLYTECHNIC LOHAGHAT</small></h2>
+    <h2>Phone:<small>05926-234535</small></h2>
+    <h2>Fax:<small>05965-234535</small></h2>
+    <h2>Email:<small>gplpoly1975@gmail.com</small></h2>
+    <h2>Website:<small>www.gplohaghat.org.in</small></h2>
+    <footer>
+      <div class="footer-content">
+          <img src="logo.png" class="logo" alt="" >
+          </div>
+      </div>
+    </footer>
+    <footer>
+    <p class="info">support emails - gplohaght@gmail.com, lohaghat@gmail.com</p>
+      <p class="info">telephone - 180 00 00 001, 180 00 00 002</p>
+      <div class="footer-social-container">
+          <div>
+              <a href="#" class="social-link">terms & services</a>
+              <a href="#" class="social-link">privacy page</a>
+          </div>
+          <div> 
+              <a href="#" class="social-link">facebook</a>
+          </div>
+      </div>
+      <p class="footer-credit">Government Polytechnic Lohaghat, Uttarakhand-262524. All rights are reserved © 2022-23</p>
+    </footer>
+    </html>
+    <script src="collage.js"></script>
+</body>
+</html>
